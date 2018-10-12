@@ -24,7 +24,7 @@
 				<version>2.12</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testNg.xml</suiteXmlFile>
+						<suiteXmlFile>resource/testNg.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
