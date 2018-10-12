@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="YandexMarket">
+        <classes>
+            <class name="Tests103">
+                <methods>
+                    <include name="canReachSite_hardAsserts"/>
+                </methods>
+            </class> <!-- Tests103 -->
+        </classes>
+    </test> <!-- YandexMarket -->
+</suite> <!-- Default Suite -->

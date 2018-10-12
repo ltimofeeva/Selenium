@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="YandexMarket">
+        <parameter name="Browser" value="Chrome"/>
+        <groups>
+            <run>
+                <include name="canReach"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Test103">
+                <methods>
+                    <include name="canFind_dataProvider"/>
+                    <include name="canReachSite_softAssert"/>
+                </methods>
+            </class> <!-- Tests103 -->
+        </classes>
+    </test> <!-- YandexMarket -->
+</suite> <!-- Default Suite -->
