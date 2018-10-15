@@ -17,8 +17,10 @@ import java.util.stream.Collectors;
 
 public class Test1 {
     private WebDriver driver;
+    private static String SELECTED_CITY = "Минск";
+    private static String SEARCH_CITY = "Городок";
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     @Parameters("Browser")
     public void start(@Optional String browserName){
         if (browserName != null) {
@@ -54,15 +56,17 @@ public class Test1 {
     @Test(priority = 2,groups = {"Check"})
     public void setCity(){
         WebElement city = driver.findElement(By.cssSelector(".DropDown__text"));
-        if (city.getText() == "Минск");{
+        if (SELECTED_CITY.equals(city.getText())){
             city.click();
-            List<WebElement> cityElements = driver.findElements(By.cssSelector(".List.CityFilter__modalList"));
+            List<WebElement> cityElements = driver.findElements(By.cssSelector(".List.CityFilter__modalList .List__item.CityFilter__item"));
             if (cityElements.isEmpty()) {
                 Assert.fail("There aren't any city");
             }   else    {
                 for (WebElement element: cityElements){
-                    if (element.getText().equals("Брест")){
-                        driver.findElement(By.cssSelector(".Radio__text")).click();
+
+                    if (SEARCH_CITY.equals(element.findElements(By.cssSelector("span")).get(0).getText())){
+                      element.click();
+                      break;
                     }
                 }
 
