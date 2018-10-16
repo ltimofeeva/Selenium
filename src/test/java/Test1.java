@@ -22,14 +22,14 @@ public class Test1 {
 
     @BeforeMethod(alwaysRun = true)
     @Parameters("Browser")
-    public void start(@Optional String browserName){
+    public void start(@Optional String browserName) {
         if (browserName != null) {
             if (browserName.contentEquals("Chrome")) {
                 driver = new ChromeDriver();
             } else {
                 driver = new FirefoxDriver();
                 FirefoxProfile firefoxProfile = new FirefoxProfile();
-                firefoxProfile.setPreference("capability.policy.default.Window.frameElement.get","allAccess");
+                firefoxProfile.setPreference("capability.policy.default.Window.frameElement.get", "allAccess");
                 firefoxProfile.setPreference("capability.policy.default.Window.QueryInterface", "allAccess");
             }
         } else {
@@ -38,7 +38,7 @@ public class Test1 {
 
         System.setProperty("file.encoding", "UTF-8");
         driver.manage().window().maximize();
-        //driver.manage().window().setSize(new Dimension(770,840));
+      //  driver.manage().window().setSize(new Dimension(760, 840));
         driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(50, TimeUnit.SECONDS);
@@ -47,33 +47,39 @@ public class Test1 {
 
 
     @Test(priority = 1, groups = {"canReach"})
-    public void canReachSite_hardAssert(){
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.103.by/","URL is correct");
+    public void canReachSite_hardAssert() {
+        Assert.assertEquals(driver.getCurrentUrl(), "https://www.103.by/", "URL is correct");
         Assert.assertTrue(driver.getTitle().contains("103.by"), "Header contains 103.by");
         driver.getCurrentUrl();
     }
 
-    @Test(priority = 2,groups = {"Check"})
-    public void setCity(){
-        WebElement city = driver.findElement(By.cssSelector(".DropDown__text"));
-        if (SELECTED_CITY.equals(city.getText())){
-            city.click();
-            List<WebElement> cityElements = driver.findElements(By.cssSelector(".List.CityFilter__modalList .List__item.CityFilter__item"));
-            if (cityElements.isEmpty()) {
-                Assert.fail("There aren't any city");
-            }   else    {
-                for (WebElement element: cityElements){
-
-                    if (SEARCH_CITY.equals(element.findElements(By.cssSelector("span")).get(0).getText())){
-                      element.click();
-                      break;
-                    }
-                }
-
-            }
+    @Test(priority = 2, groups = {"Check"})
+    public void setCity() {
+        WebElement cityDesc = driver.findElement(By.cssSelector(".DropDown__text"));
+        WebElement cityMob = driver.findElement(By.cssSelector(".DropDown"));
+        if (driver.manage().window().getSize().getWidth() < 768) {
+            cityMob.click();
+        } else {
+            SELECTED_CITY.equals(cityDesc.getText());
+            cityDesc.click();
         }
-        driver.quit();
+        List<WebElement> cityElements = driver.findElements(By.cssSelector(".List.CityFilter__modalList .List__item.CityFilter__item"));
+        if (cityElements.isEmpty()) {
+            Assert.fail("There aren't any city");
+        } else {
+            for (WebElement element : cityElements) {
+
+                if (SEARCH_CITY.equals(element.findElements(By.cssSelector("span")).get(0).getText())) {
+                    element.click();
+                    break;
+                }
+            }
+
+        }
     }
+
+
+
 
 
     @Test(dataProvider = "getDrag",priority = 3, groups = {"canReach","regression"})

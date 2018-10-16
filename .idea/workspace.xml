@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59f30bb7-a154-43b2-8622-ef9cabf95080" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test1.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -127,13 +121,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="197" />
+          <entry key="java" value="282" />
+          <entry key="txt" value="11" />
           <entry key="xml" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="197" />
+          <entry key="JAVA" value="282" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="XML" value="41" />
         </counts>
       </usages-collector>
@@ -158,10 +154,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="326">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6642#6643#0" expanded="true" />
+                <element signature="e#6696#6697#0" expanded="true" />
+                <element signature="e#6740#6741#0" expanded="true" />
+                <element signature="e#6769#6770#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,8 +198,8 @@
         <option value="$PROJECT_DIR$/testNg" />
         <option value="$PROJECT_DIR$/testNg.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Test1.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Test1.java" />
       </list>
     </option>
   </component>
@@ -211,10 +211,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="64" />
+    <option name="y" value="21" />
+    <option name="width" value="1934" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -255,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539615074516" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539699729264" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/testng.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -274,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/user/IdeaProjects/Selenium/testng.xml">
+  <component name="RunManager" selected="TestNG.Test1.setCity">
     <configuration name="Maven" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -313,16 +313,6 @@
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/user/IdeaProjects/Selenium/testNg.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNg.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -380,6 +370,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test1.setCity (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Seleniumnew" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test1" />
+      <option name="METHOD_NAME" value="setCity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test1.setCity" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium" />
       <option name="PACKAGE_NAME" value="" />
@@ -413,19 +415,19 @@
       <item itemvalue="Maven.Maven" />
       <item itemvalue="TestNG.Test1" />
       <item itemvalue="TestNG.canReach" />
-      <item itemvalue="TestNG.C:/Users/user/IdeaProjects/Selenium/testNg.xml" />
       <item itemvalue="TestNG.C:/Users/user/IdeaProjects/Selenium/testng.xml" />
       <item itemvalue="TestNG.Test1.setCity" />
       <item itemvalue="TestNG.C:/Users/Paderina_L/IdeaProjects/Seleniumnew/testng.xml" />
       <item itemvalue="TestNG.Test1.canReachSite_hardAssert" />
+      <item itemvalue="TestNG.Test1.setCity (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/user/IdeaProjects/Selenium/testng.xml" />
         <item itemvalue="TestNG.Test1.setCity" />
+        <item itemvalue="TestNG.Test1.setCity (1)" />
+        <item itemvalue="TestNG.C:/Users/user/IdeaProjects/Selenium/testng.xml" />
         <item itemvalue="TestNG.Test1.canReachSite_hardAssert" />
         <item itemvalue="TestNG.C:/Users/Paderina_L/IdeaProjects/Seleniumnew/testng.xml" />
-        <item itemvalue="TestNG.C:/Users/user/IdeaProjects/Selenium/testNg.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -440,45 +442,53 @@
       <option name="presentableId" value="Default" />
       <updated>1538648538352</updated>
     </task>
+    <task id="LOCAL-00001" summary="city check">
+      <created>1539615274721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539615274721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test1_setCity - 2018.10.15 at 17h 39m 20s.xml">
-      <configuration name="Test1.setCity" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test1_setCity - 2018.10.15 at 17h 39m 33s.xml">
-      <configuration name="Test1.setCity" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test1_setCity - 2018.10.15 at 17h 42m 26s.xml">
-      <configuration name="Test1.setCity" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test1_setCity - 2018.10.15 at 17h 44m 02s.xml">
-      <configuration name="Test1.setCity" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_user_IdeaProjects_Selenium_testng_xml - 2018.10.15 at 17h 45m 45s.xml">
-      <configuration name="C:/Users/user/IdeaProjects/Selenium/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_user_IdeaProjects_Selenium_testng_xml - 2018.10.15 at 17h 46m 19s.xml">
-      <configuration name="C:/Users/user/IdeaProjects/Selenium/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_user_IdeaProjects_Selenium_testng_xml - 2018.10.15 at 17h 46m 43s.xml">
-      <configuration name="C:/Users/user/IdeaProjects/Selenium/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_user_IdeaProjects_Selenium_testng_xml - 2018.10.15 at 17h 47m 06s.xml">
-      <configuration name="C:/Users/user/IdeaProjects/Selenium/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_user_IdeaProjects_Selenium_testng_xml - 2018.10.15 at 17h 47m 29s.xml">
       <configuration name="C:/Users/user/IdeaProjects/Selenium/testng.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="C__Users_user_IdeaProjects_Selenium_testng_xml - 2018.10.15 at 17h 48m 45s.xml">
       <configuration name="C:/Users/user/IdeaProjects/Selenium/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Test1_setCity_(1) - 2018.10.16 at 16h 25m 27s.xml">
+      <configuration name="Test1.setCity (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_setCity_(1) - 2018.10.16 at 16h 25m 53s.xml">
+      <configuration name="Test1.setCity (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_setCity_(1) - 2018.10.16 at 16h 26m 12s.xml">
+      <configuration name="Test1.setCity (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_setCity_(1) - 2018.10.16 at 16h 26m 30s.xml">
+      <configuration name="Test1.setCity (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_setCity - 2018.10.16 at 17h 05m 44s.xml">
+      <configuration name="Test1.setCity" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_setCity - 2018.10.16 at 17h 20m 00s.xml">
+      <configuration name="Test1.setCity" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_setCity - 2018.10.16 at 17h 20m 02s.xml">
+      <configuration name="Test1.setCity" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test1_setCity - 2018.10.16 at 17h 21m 00s.xml">
+      <configuration name="Test1.setCity" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24360341" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27933985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -487,8 +497,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4355363" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41657335" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45016798" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41657335" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -546,26 +556,30 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="city check" />
+    <option name="LAST_COMMIT_MESSAGE" value="city check" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Test1.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test1.java</url>
-          <line>60</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Test1.java</url>
-          <line>80</line>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Test1.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -642,10 +656,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="326">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6642#6643#0" expanded="true" />
+            <element signature="e#6696#6697#0" expanded="true" />
+            <element signature="e#6740#6741#0" expanded="true" />
+            <element signature="e#6769#6770#0" expanded="true" />
           </folding>
         </state>
       </provider>
